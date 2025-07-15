@@ -6,11 +6,11 @@
     bar.style.width = currentStat + "%";
 
     if (currentStat > 60) {
-      bar.style.backgroundColor = "#4caf50"; // Green
+      bar.style.backgroundColor = "#4caf50";
     } else if (currentStat > 30) {
-      bar.style.backgroundColor = "#ff9800"; // Orange
+      bar.style.backgroundColor = "#ff9800";
     } else {
-      bar.style.backgroundColor = "#f44336"; // Red
+      bar.style.backgroundColor = "#f44336";
     }
   }
 
@@ -24,5 +24,5 @@
     updateBar();
   }
 
-  updateBar(); // Initialize on load
+  updateBar();
 
