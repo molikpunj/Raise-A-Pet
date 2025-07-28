@@ -103,26 +103,6 @@
                 document.getElementById('healthValue').textContent = Math.round(this.health);
 
                 document.getElementById('petAge').textContent = this.age + ' days';
-
-                this.updatePetState();
-            }
-
-            updatePetState() {
-                const petEl = document.getElementById('petEmoji');
-                
-                if (this.health < 30) {
-                    petEl.textContent = '🤒';
-                } else if (this.energy < 20) {
-                    petEl.textContent = '😴';
-                } else if (this.hunger < 30) {
-                    petEl.textContent = '😋';
-                } else if (this.happiness > 80) {
-                    petEl.textContent = '😄';
-                } else if (this.happiness < 30) {
-                    petEl.textContent = '😢';
-                } else {
-                    petEl.textContent = '🐶';
-                }
             }
 
             startGameLoop() {
